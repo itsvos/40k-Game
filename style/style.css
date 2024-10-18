@@ -9,7 +9,7 @@
     width: 100%;
     overflow: hidden;
     position: relative;
-    font-family: 'Cinzel', serif;
+    font-family: url(../fonts/Exorcista_-Jed_40.ttf), 'Cinzel', serif;
 }
 
 .splash-container::before {
