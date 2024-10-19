@@ -43,5 +43,19 @@
     align-items: center;
     justify-content: center;
     border: solid #DAA520 10px;
+    background: #DAA520;
     text-align: center;
+}
+
+.content-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/195-1957551_the-emperor-protects-warhammer-40k-inquisitor-logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
 }
