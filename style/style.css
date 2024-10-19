@@ -8,12 +8,13 @@
     font-family: Exorcista;
     src: url(../fonts/Exorcista_-Jed_40.ttf);
 }
+
 .splash-container {
     height: 100vh;
     width: 100%;
     overflow: hidden;
     position: relative;
-    font-family: 'Exorcista', 'Cinzel', serif;
+    font-family: Exorcista, 'Cinzel', serif;
 }
 
 .splash-container::before {
