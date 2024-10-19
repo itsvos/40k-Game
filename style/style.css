@@ -33,9 +33,12 @@
 
 .content-wrapper {
     font-family: Exorcista;
-    height: 100px;
-    display: flex;
+    margin: 50%;
+    /*height: 100px;*/
+    width: max-content;
+    display: grid;
     align-items: center;
     justify-content: center;
     border: solid #DAA520 10px;
+    text-align: center;
 }
