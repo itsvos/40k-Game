@@ -30,3 +30,7 @@
     filter: brightness(50%);
     z-index: -1;
 }
+
+.content-wrapper {
+    font-family: Exorcista;
+}
