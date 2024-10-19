@@ -13,7 +13,7 @@
     width: 100%;
     overflow: hidden;
     position: relative;
-    font-family: 'Exorcista'), 'Cinzel', serif;
+    font-family: 'Exorcista', 'Cinzel', serif;
 }
 
 .splash-container::before {
