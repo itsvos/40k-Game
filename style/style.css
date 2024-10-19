@@ -31,6 +31,24 @@
     z-index: -1;
 }
 
+.logo {
+    border: solid #eb4034 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    right: 0;
+    margin: auto;
+    width: 60px;
+    height: 93px;
+    display: flex;
+    text-align: center;
+    background-image: url(../images/195-1957551_the-emperor-protects-warhammer-40k-inquisitor-logo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    align-items: center;
+  }
+
 .content-wrapper {
     font-family: Exorcista;
     position: absolute;
@@ -47,7 +65,7 @@
     text-align: center;
 }
 
-.content-wrapper::before {
+/*.content-wrapper::before {
     content: '';
     position: absolute;
     top: 0;
@@ -58,4 +76,22 @@
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 0;
-}
+}*/
+
+.logo_2 {
+    border: solid #eb4034 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 225px;
+    right: 0;
+    margin: auto;
+    width: 60px;
+    height: 93px;
+    display: flex;
+    text-align: center;
+    background-image: url(../images/195-1957551_the-emperor-protects-warhammer-40k-inquisitor-logo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    align-items: center;
+  }
