@@ -61,6 +61,22 @@
 }*/
 
 
+
+.logo_left {
+    border: solid #eb4034 10px;
+    width: 67px;
+    height: 105px;
+    display: flex;
+    text-align: center;
+    background-image: url(../images/195-1957551_the-emperor-protects-warhammer-40k-inquisitor-logo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: -75px;
+}
+
 .logo_right {
     border: solid #eb4034 10px;
     width: 67px;
@@ -77,17 +93,3 @@
     left: 225px;*/
 }
   
-.logo_left {
-    border: solid #eb4034 10px;
-    width: 67px;
-    height: 105px;
-    display: flex;
-    text-align: center;
-    background-image: url(../images/195-1957551_the-emperor-protects-warhammer-40k-inquisitor-logo.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    left: -75px;
-}
