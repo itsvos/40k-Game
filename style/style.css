@@ -72,7 +72,7 @@
     background-repeat: no-repeat;
     align-items: center;
     position: absolute;
-    top: 100;
+    top: 0;
     left: 225px;
   }
   
@@ -87,6 +87,6 @@
     background-repeat: no-repeat;
     align-items: center;
     position: absolute;
-    top: 100;
+    top: 0;
     left: -75px;
   }
