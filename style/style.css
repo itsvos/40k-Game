@@ -15,6 +15,11 @@
     overflow: hidden;
     position: relative;
     font-family: Exorcista, 'Cinzel', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: opacity 1s ease-in-out;
 }
 
 .splash-container::before {
@@ -53,9 +58,6 @@
     display: flex;
     text-align: center;
     background: #eb4034;
-    background-image: url(../images/195-1957551_the-emperor-protects-warhammer-40k-inquisitor-logo.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
     align-items: center;
     position: absolute;
     top: -10px;
@@ -63,8 +65,28 @@
 
 .logo_left {
     left: -75px;
+    background-image: url(../images/195-1957551_the-emperor-protects-warhammer-40k-inquisitor-logo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .logo_right {
     left: 325px;
+    background-image: url(../images/195-1957551_the-emperor-protects-warhammer-40k-inquisitor-logo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.enter-button {
+    content: '';
+}
+
+.game-container {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    transition: opacity 1s ease-in-out;
 }
