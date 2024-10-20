@@ -57,4 +57,25 @@ loadLogo.forEach(logoRight => {
         logoRight.style.backgroundPosition = 'center'
     })
 
-})
+});
+
+const loadButton = document.querySelector('.logo_right');
+const loadWrapper = document.querySelector('.load-wrapper');
+const leaveLoad = document.querySelector('.exit-loader');
+
+loadButton.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    setTimeout(() => {
+//        loadWrapper.style.display = 'flex';
+        loadWrapper.style.visibility = 'visible';
+        loadWrapper.style.opacity = '1';
+    }, 1000);
+});
+
+leaveLoad.addEventListener('click', (e) => {
+    e.preventDefault();
+
+//    loadWrapper.style.display = 'flex';
+    loadWrapper.style.opacity = '0';
+});

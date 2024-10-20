@@ -90,3 +90,29 @@
     justify-content: center;
     transition: opacity 1s ease-in-out;
 }
+
+.load-wrapper {
+    height: 105px;
+    width: 335px;
+    background-color: purple;
+    display: block;
+    justify-content: center;
+    transition: opacity 1s ease-in-out;
+    z-index: 1;
+    position: relative;
+/*    opacity: 0;
+/*    transition: opacity 1s ease-in-out
+/*    visibility: hidden;*/
+/*    opacity: '0';*/
+}
+
+.load-button {
+    position: absolute;
+    bottom: 10px;
+    left: 142px;
+}
+
+.exit-loader {
+    height: min-content;
+    width: 50px;
+}
