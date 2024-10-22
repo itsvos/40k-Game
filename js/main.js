@@ -1,5 +1,5 @@
 // Import the things
-import { logoLargeLeftInit, logoLargeRightInit, logoLoadInit, loadingPanelInit, loadingPanelClose } from "./modules/splash.mjs";
+import { logoLargeLeftInit, logoLargeRightInit, logoLoadInit, loadingPanelInit, loadingPanelClose, loadLogo } from "./modules/splash.mjs";
 import { loadSaveStates } from "./modules/character-load.mjs";
 import { gameScene } from "./modules/game-start.mjs";
 
@@ -11,5 +11,10 @@ window.addEventListener('DOMContentLoaded', () =>{
     logoLoadInit();
     loadingPanelInit();
     loadingPanelClose();
-    loadSaveStates();
 });
+
+
+loadLogo.addEventListener('click', (e) => {
+    e.preventDefault();
+    loadSaveStates();
+})

@@ -1,8 +1,6 @@
 // Select DOM elements for use in both splash and main
 const logoLeft = document.querySelectorAll('.logo-left');
 const logoRight = document.querySelectorAll('.logo-right');
-const splashContainer = document.querySelector('.splash-container');
-const gameContainer = document.querySelector('.game-container');
 const loadLogo = document.querySelector('.logo-right');
 const loadWrapper = document.querySelector('.load-wrapper');
 const leaveLoad = document.querySelector('.exit-loader');
@@ -84,4 +82,5 @@ function loadingPanelClose() {
 }
 
 // Exporting
-export { logoLargeLeftInit, logoLargeRightInit, logoLoadInit, loadingPanelInit, loadingPanelClose };
+export { logoLargeLeftInit, logoLargeRightInit, logoLoadInit, loadingPanelInit, loadingPanelClose, loadLogo };const splashContainer = document.querySelector('.splash-container');
+const gameContainer = document.querySelector('.game-container');
