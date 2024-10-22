@@ -1,6 +1,7 @@
 [
     {
         "name": "Arcturus Harrow",
+        "timestamp": "2024-10-20 14:35",
         "health": 100,
         "armor": 50,
         "strength": 15,
@@ -9,6 +10,7 @@
     },
     {
         "name": "Jebediah Harrow",
+        "timestamp": "2024-10-21 23:40",
         "health": 80,
         "armor": 20,
         "strength": 10,

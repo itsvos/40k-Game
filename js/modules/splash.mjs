@@ -1,17 +1,22 @@
 // Select DOM elements for use in both splash and main
-const logos = document.querySelectorAll('.logo');
-const enterButton = document.querySelector('.enter-button');
+const logoLeft = document.querySelectorAll('.logo-left');
+const logoRight = document.querySelectorAll('.logo-right');
 const splashContainer = document.querySelector('.splash-container');
 const gameContainer = document.querySelector('.game-container');
-const loadLogo = document.querySelector('.logo_right');
+const loadLogo = document.querySelector('.logo-right');
 const loadWrapper = document.querySelector('.load-wrapper');
 const leaveLoad = document.querySelector('.exit-loader');
 
 
 // Logos logic
-function logoLarge(logo) {
-    logo.style.transform = 'scale(1.2)';
-    logo.style.boxShadow = '10px 10px 15px blue';
+function logoLargeLeft(logoLeft) {
+    logoLeft.style.transform = 'scale(1.2)';
+    logoLeft.style.boxShadow = '-10px 10px 15px blue';
+};
+
+function logoLargeRight(logoRight) {
+    logoRight.style.transform = 'scale(1.2)';
+    logoRight.style.boxShadow = '10px 10px 15px blue';
 };
 
 function logoReturn(logo) {
@@ -30,20 +35,6 @@ function loadLogoReturn(logoRight) {
 }
 
 
-// Game Start Logic
-function gameTransition() {
-    // Fade out Splash Page
-    splashContainer.style.opacity = '0';
-
-    // After transition, hide splash and show game content
-    setTimeout(() => {
-        splashContainer.style.display = 'none';
-        gameContainer.style.display = 'flex';
-        gameContainer.style.opacity = '1';
-    }, 1000)
-};
-
-
 // Loading Screen Logic
 function showPanel() {
     loadWrapper.classList.add('visible');
@@ -55,21 +46,21 @@ function hidePanel() {
 
 
 // Event Listeners
-function logoLargeInit() {
-    logos.forEach(logo => {
-        logo.addEventListener('mouseenter', () => logoLarge(logo));
+function logoLargeLeftInit() {
+    logoLeft.forEach(logo => {
+        logo.addEventListener('mouseenter', () => logoLargeLeft(logo));
         logo.addEventListener('mouseleave', () => logoReturn(logo));
     })
 };
 
-function gameScene() {
-    enterButton.addEventListener('click', (e) => {
-        e.preventDefault();
-        gameTransition();
+function logoLargeRightInit() {
+    logoRight.forEach(logo => {
+        logo.addEventListener('mouseenter', () => logoLargeRight(logo));
+        logo.addEventListener('mouseleave', () => logoReturn(logo));
     })
-};
+}
 
-function logoRightInit() {
+function logoLoadInit() {
     loadLogo.addEventListener('mouseenter', () => showLoadLogo(loadLogo));
     loadLogo.addEventListener('mouseleave', () => loadLogoReturn(loadLogo));
 };
@@ -88,9 +79,9 @@ function loadingPanelClose() {
         setTimeout(() => {
             loadWrapper.classList.remove('visible');
             loadWrapper.classList.remove('leave');
-        }, 1000);
+           }, 1000);
     })
 }
 
 // Exporting
-export { logoLargeInit, gameScene, logoRightInit, loadingPanelInit, loadingPanelClose };
+export { logoLargeLeftInit, logoLargeRightInit, logoLoadInit, loadingPanelInit, loadingPanelClose };
