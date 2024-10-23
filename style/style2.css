@@ -9,6 +9,15 @@
     src: url(../fonts/Exorcista_-Jed_40.ttf);
 }
 
+@font-face {
+    font-family: UnifrakturMaguntia;
+    src: url('../fonts/UnifrakturMaguntia/UnifrakturMaguntia-Regular.ttf');
+}
+
+.page {
+    display: inline;
+}
+
 .splash-container {
     height: 100vh;
     width: 100%;
@@ -46,9 +55,13 @@
     display: grid;
     align-items: center;
     justify-content: center;
-    border: solid #DAA520 10px;
-    background: #DAA520;
+    border: solid ivory 10px;
+    background: ivory;
     text-align: center;
+}
+
+.game-title {
+    font-family: UnifrakturMaguntia;
 }
 
 .logo {
@@ -64,14 +77,14 @@
     background-position: center;
 }
 
-.logo_left {
+.logo-left {
     left: -75px;
     background-image: url(../images/195-1957551_the-emperor-protects-warhammer-40k-inquisitor-logo.png);
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
-.logo_right {
+.logo-right {
     left: 325px;
     background-image: url(../images/195-1957551_the-emperor-protects-warhammer-40k-inquisitor-logo.png);
     background-repeat: no-repeat;
@@ -82,23 +95,13 @@
     content: '';
 }
 
-.game-container {
-    height: 100vh;
-    width: 100%;
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: center;
-    transition: opacity 1s ease-in-out;
-}
-
 .load-wrapper {
     height: 105px;
     width: 335px;
     background-color: purple;
     display: block;
     justify-content: center;
-    z-index: 1;
+/*    z-index: 2; */
     position: relative;
 
     /* Hiding from the world */
@@ -139,10 +142,53 @@
 .load-button {
     position: absolute;
     bottom: 10px;
-    left: 142px;
+    right: 10px;
 }
 
 .exit-loader {
     height: min-content;
     width: 50px;
 }
+
+.load-options {
+    height: 105px;
+    width: 265px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.load-options li {
+    padding: 10px;
+    border-bottom: 1px solid #555;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.load-options li:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.game-container {
+    font-family: UnifrakturMaguntia;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    color: white;
+}
+
+.game-container.active {
+    display: flex;
+    opacity: 1;
+    border: solid 10px white;
+}
+
+.ST-box {
+    display: inline-block;
+}
+

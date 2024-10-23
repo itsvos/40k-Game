@@ -7,33 +7,44 @@
         <link rel="stylesheet" href="style/style2.css">
     </head>
     <body>
+        <div class="page">
         <div class="splash-container">
-            <div class="background-overlay">
-            </div>
-        <div class="content-wrapper">
-            <h1 class="game-title">Nightshade</h1>
-            <p class="tagline">
-                In the cold silence, no one dreams of salvation...
-            </p>
+            <div class="background-overlay"></div>
+            <div class="content-wrapper">
+                <!-- img src="/images/pngtree-medieval-banner-with-blank-space-for-text-on-transparent-background-png-image_12926051.png"> -->
+                <h1 class="game-title">Nightshade</h1>
+                <p class="tagline">
+                    In the cold silence, no one dreams of salvation...
+                </p>
 
-            <div class="button-container">
-                <a href="#" class="enter-button">Enter the Void</a>
+                <div class="button-container">
+                    <a href="#" class="enter-button">Enter the Void</a>
+                </div> 
+                <div class="logo logo-left"></div>
+                <div class="logo logo-right"></div>
             </div> 
-            <div class="logo logo_left"></div>
-            <div class="logo logo_right"></div>
-        </div>
-        <div class="game-container" style="display: none; opacity: 0;">
-            <h2>Welcome to Nightshade</h2>
-            <p>Your journey begins here...</p>
-        </div>
-
-        <div class="load-wrapper">
-            <h2>This will be the loading screen.</h2>
-            <div class="load-button">
-                <button class="exit-loader">Exit Loading Screen</button>
-        
+            <div class="load-wrapper">
+                <!-- <h2>This will be the loading screen.</h2> -->
+                <div class="load-button">
+                    <button class="exit-loader">Exit Loading Screen</button>
+                </div>
+                <div class="load-options">
+                    <ul id="save-list"></ul>
+                </div>
             </div>
         </div>
+    
+
+
+
+        <div class="game-container">
+            <div class="ST-box">
+                <h2 class="welcome">Hail, Inquisitor.</h2>
+                <p class="journey">Your journey begins here...</p>
+            </div>
+        </div>
+        </div>
+
 
         <script src="js/main.js" type="module"></script>
     </body>
