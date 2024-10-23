@@ -1,0 +1,24 @@
+{
+  "dialogue": [
+    {
+      "character": "Inquisitor",
+      "text": "The path is clear: we move at dawn."
+    },
+    {
+      "character": "Acolyte",
+      "text": "It feels strange... too quiet."
+    }
+  ],
+  "choices": [
+    {
+      "text": "Draw your weapon.",
+      "next_scene": "combat_intro"
+    },
+    {
+      "text": "Proceed cautiously.",
+      "next_scene": "chapel_interior"
+    }
+  ],
+  "id": "chapel_entrance",
+  "background": "chapel.jpg"
+}
