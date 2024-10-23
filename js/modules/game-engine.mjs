@@ -7,7 +7,7 @@ let currentLine = 0; // Track the line of dialogue
 // Load the JSON script file
 async function loadScript() {
     try{
-        const response = await fetch('../../../scripts/chapel_intro.json');
+        const response = await fetch('../scripts/chapel_intro.json');
         if (!response.ok) throw new Error('Data not loaded.');
 
         script = await response.json();
