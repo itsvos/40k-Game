@@ -7,7 +7,7 @@ const saveList = document.getElementById('save-list');
 // Functions
 async function loadSaveStates() {
     try{
-        const response = await fetch('../JSON/character-load.json');
+        const response = await fetch('./JSON/character-load.json');
         if (!response.ok) throw new Error('No character saves found.');
 
         const saveData = await response.json();
