@@ -9,12 +9,12 @@ const leaveLoad = document.querySelector('.exit-loader');
 // Logos logic
 function logoLargeLeft(logoLeft) {
     logoLeft.style.transform = 'scale(1.2)';
-    logoLeft.style.boxShadow = '-10px 10px 15px blue';
+    logoLeft.style.boxShadow = '-10px 10px 15px grey';
 };
 
 function logoLargeRight(logoRight) {
     logoRight.style.transform = 'scale(1.2)';
-    logoRight.style.boxShadow = '10px 10px 15px blue';
+    logoRight.style.boxShadow = '10px 10px 15px grey';
 };
 
 function logoReturn(logo) {
@@ -83,4 +83,3 @@ function loadingPanelClose() {
 
 // Exporting
 export { logoLargeLeftInit, logoLargeRightInit, logoLoadInit, loadingPanelInit, loadingPanelClose, loadLogo };const splashContainer = document.querySelector('.splash-container');
-const gameContainer = document.querySelector('.game-container');
